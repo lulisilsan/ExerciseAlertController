@@ -94,7 +94,7 @@ class ViewController: UIViewController {
             self.showAlert(item)
         }))
         
-        alert.addAction(UIAlertAction(title: "Excluir", style: .cancel, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "Excluir", style: .default, handler: { (action) in
             self.deleteItem(item: item)
         }))
         
