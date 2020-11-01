@@ -10,7 +10,4 @@ Ao tocar num item da lista de compras, devem aparecer 3 opções:
 
 Ao clicar em editar, deve abrir o alert com o input preenchido para  A edição. Ao clicar em concluído, deve excluir o item da lista. Cancelar só fecha as opções.
 
-<p align="center">
-    <img src="images/app.gif" align="center" width=150>
-</p>
 

@@ -16,7 +16,6 @@
 		9F0C15FF254B0CE000B231ED /* MarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C15FE254B0CE000B231ED /* MarketCell.swift */; };
 		9F0C1604254B0CFA00B231ED /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C1603254B0CFA00B231ED /* Market.swift */; };
 		9F0C160E254CC71900B231ED /* market1.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C160D254CC71900B231ED /* market1.webp */; };
-		9F89F007254F67F300D6F5FE /* ExerciseAlertController.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9F89F006254F67F300D6F5FE /* ExerciseAlertController.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		9F0C15FE254B0CE000B231ED /* MarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCell.swift; sourceTree = "<group>"; };
 		9F0C1603254B0CFA00B231ED /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		9F0C160D254CC71900B231ED /* market1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = market1.webp; sourceTree = "<group>"; };
-		9F89F006254F67F300D6F5FE /* ExerciseAlertController.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ExerciseAlertController.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +46,6 @@
 		9F0C15DC254B0C0C00B231ED = {
 			isa = PBXGroup;
 			children = (
-				9F89F005254F67CE00D6F5FE /* images */,
 				9F0C15E7254B0C0C00B231ED /* DesafioAlertController */,
 				9F0C15E6254B0C0C00B231ED /* Products */,
 			);
@@ -93,14 +90,6 @@
 				9F0C1603254B0CFA00B231ED /* Market.swift */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		9F89F005254F67CE00D6F5FE /* images */ = {
-			isa = PBXGroup;
-			children = (
-				9F89F006254F67F300D6F5FE /* ExerciseAlertController.gif */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F0C15F5254B0C1000B231ED /* LaunchScreen.storyboard in Resources */,
-				9F89F007254F67F300D6F5FE /* ExerciseAlertController.gif in Resources */,
 				9F0C160E254CC71900B231ED /* market1.webp in Resources */,
 				9F0C15F2254B0C1000B231ED /* Assets.xcassets in Resources */,
 				9F0C15F0254B0C0C00B231ED /* Main.storyboard in Resources */,
