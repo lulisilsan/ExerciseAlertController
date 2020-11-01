@@ -83,10 +83,8 @@ class ViewController: UIViewController {
         present(alertAddItem, animated: true, completion: nil)
     }
     
-    //FUNÇAO PARA O ACTIONSHEET
     
     func alertTableView(item: Market) {
-
     let alert = UIAlertController(title: "Atenção",
                                        message: "Escolha uma opção",
                                        preferredStyle: .actionSheet)
@@ -102,54 +100,33 @@ class ViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
-//
-    
-    
-    //FUNÇÃO PARA ADICIONAR ITENS NO ARRAY
+
     func addItem (item: Market) {
             arrayMarket.append(item)
             tableViewMarket.reloadData()
     }
     
-    //FUNÇÃO PARA DELETAR ITENS DO ARRAY
     func deleteItem (item: Market) {
         if !arrayMarket.isEmpty {
-            //if itemExist(searchItem: item) {
-                arrayMarket.removeAll() {$0.name.lowercased() == item.name.lowercased()}
-                tableViewMarket.reloadData()
-            //}
+            arrayMarket.removeAll() {$0.name.lowercased() == item.name.lowercased()}
+            tableViewMarket.reloadData()
         }
     }
     
-    //PEGAR O ITEM NO ARRAY PARA EDIÇÃO
     func editItem (item: Market) {
         let itemReceive = arrayMarket.first() {$0.name.lowercased() == item.name.lowercased()}
         itemReceive!.quantity = item.quantity
         tableViewMarket.reloadData()
     }
-    
-    //Função para validar se o item existe na lista
-    func itemExist (searchItem: Market) -> Bool{
-        var itemExist = false
-        for item in arrayMarket {
-            if item.name == searchItem.name {
-            itemExist = true
-            }
-        }
-        return itemExist
-    }
-
-
 }
+
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = arrayMarket[indexPath.row]
         alertTableView(item: item)
     }
-    
 }
 extension ViewController: UITableViewDataSource {
-    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayMarket.count
     }
